@@ -23,6 +23,7 @@ jobs:
 
     - name: Run all notebooks
       run: |
+        IFS=$(echo -ne "\n\b") ; 
         for notebook in $(find . -name "*.ipynb" -not -path "./.ipynb_checkpoints/*"); do
           echo "Running $notebook"
           jupyter nbconvert --to notebook --execute "$notebook" --output /dev/null
