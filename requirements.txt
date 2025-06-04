@@ -1,0 +1,8 @@
+pytim
+nbconvert
+nbformat
+jupyter
+numpy
+pandas
+matplotlib
+nglview
